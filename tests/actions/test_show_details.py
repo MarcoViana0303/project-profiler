@@ -41,3 +41,16 @@ def test_show_details_non_existing_file(capsys, context_non_existing_file):
         show_details(context_non_existing_file)
         captured = capsys.readouterr()
         assert captured.out == expected_output
+
+
+def test_show_details_file_extension_none(capsys, tmp_path):
+    file_content = ""
+    file_path = tmp_path / "out_file"
+
+    with open(file_path, "w") as file:
+        file.write(file_content)
+
+    context = {"base_path": str(file_path)}
+    show_details(context)
+    captured = capsys.readouterr()
+    assert "File extension: [no extension]" in captured.out
