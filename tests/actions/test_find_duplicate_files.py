@@ -5,13 +5,13 @@ from pro_filer.actions.main_actions import find_duplicate_files  # NOQA
 
 @pytest.fixture
 def context_with_files(tmp_path):
-    arq_1 = tmp_path / "arq_1.txt"
-    arq_1.write_text("testando" * 8)
+    file_1 = tmp_path / "file_1.txt"
+    file_1.write_text("testando")
 
-    aqr_2 = tmp_path / "aqr_2.txt"
-    aqr_2.write_text("testando" * 8)
+    file_2 = tmp_path / "file_2.txt"
+    file_2.write_text("testando")
 
-    return {"all_files": [str(arq_1), str(aqr_2)]}
+    return {"all_files": [str(file_1), str(file_2)]}
 
 
 def test_find_duplicate_files_empty_list(context_with_files):
