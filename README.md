@@ -5,9 +5,9 @@
 
 ## Observação
 
+Trabalhei em uma aplicação com uma interface de linha de comando (CLI) que recebe como entrada um caminho (diretório ou arquivo) e gera um relatório com informações sobre o caminho informado.
 
-
-
+<br />
 <details>
   <summary><strong>:memo: Habilidades trabalhadas </strong></summary>
 
@@ -69,6 +69,8 @@ cd project-profiler
   O arquivo `dev-requirements.txt` instalará todas as dependências que serão utilizadas no projeto, ele está agindo como se fosse um `package.json` de um projeto `Node.js`. Se você desejar instalar uma nova dependência, basta adicioná-la no arquivo `dev-requirements.txt` e executar o comando `python3 -m pip install -r dev-requirements.txt` novamente.
   Se o VS Code não reconhecer as dependências instaladas no ambiente virtual criado, será necessário informar o caminho do interpretador Python. Para isso, abra o VS Code e pressione `Ctrl + Shift + P` (no Mac, `Cmd + Shift + P`) e digite `Python: Select Interpreter`. Selecione o interpretador que possui o caminho `./.venv/bin/python` no nome.
 </details>
+
+<br />
 
 <details>
   <summary><strong>🛠 Testes</strong></summary>
