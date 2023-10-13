@@ -10,6 +10,7 @@ Trabalhei em uma aplicação com uma interface de linha de comando (CLI) que rec
 <br />
 <details>
   <summary><strong>:memo: Habilidades trabalhadas </strong></summary>
+<br />
 
 - Encontrei bugs no código de uma aplicação escrita em Python;
 - Corrigi bugs no código de uma aplicação escrita em Python;
@@ -74,6 +75,7 @@ cd project-profiler
 
 <details>
   <summary><strong>🛠 Testes</strong></summary>
+  <br />
   Para executar os testes certifique-se de que você está com o ambiente virtual ativado.
   <strong>Executar os testes</strong>
   
